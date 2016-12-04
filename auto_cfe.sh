@@ -5,7 +5,7 @@ cat /dev/mtd0 > ./old_cfe.bin
 
 echo
 echo Old CFE content:
-strings old_cfe.bin | grep -e mac -e secret | tee /tmp/cfe.old.key
+strings old_cfe.bin | grep -e mac -e secret > /tmp/cfe.old.key
 echo
 
 replace()
@@ -30,10 +30,10 @@ replace secret_code 8
 
 echo
 echo New CFE content:
-strings new_cfe.bin | grep -e mac -e secret | /tmp/cfe.new.key
+strings new_cfe.bin | grep -e mac -e secret > /tmp/cfe.new.key
 echo
 
-diff /tmp/cfe.new.key /tmp/cfe.old.key
+cmp /tmp/cfe.new.key /tmp/cfe.old.key
 if [ $? -gt 0 ];then
    echo "something went wrong in crafting the new CFE image, please go back to the old manual method."
 else
