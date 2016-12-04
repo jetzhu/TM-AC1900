@@ -22,7 +22,8 @@ Step 3:
 Next it is recommended to expand root partition use this firmware:
 http://dlcdnet.asus.com/pub/ASUS/wireless/RT-AC68U/FW_RT_AC68U_30043763626.zip
 Flash it use CFE webpage is most reliable, you can directly boot into CFE after the above step 3.
-Alternatively, if you are not able to use CFE mini-webpage to flash and get stucked at this step, You may want to use Firmware Restoration Tool downloadable from ASUS website: http://www.asus.com/Networking/RTAC68U/HelpDesk_Download/
+Alternatively, if you are not able to use CFE mini-webpage to flash and get stucked at this step, You may want to use 
+Firmware Restoration Tool downloadable from ASUS website: http://www.asus.com/Networking/RTAC68U/HelpDesk_Download/
 ASUS Firmware Restoration version 2.0.0.0 and ASUS Device Discovery version 1.4.7.1 are used to upload/flash FW_RT_AC68U_30043763626.trx
 
 ** Perform a manual NVRAM clear use WPS button after every firmware flash **
